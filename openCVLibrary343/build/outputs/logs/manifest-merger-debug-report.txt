@@ -1,0 +1,20 @@
+-- Merging decision tree log ---
+manifest
+ADDED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml:2:1-6:12
+	package
+		INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml:4:7-34
+	xmlns:android
+		ADDED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml:3:5-31
+uses-sdk
+INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml
+INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from H:\NLUmath_1\NLUmath_1\openCVLibrary343\src\main\AndroidManifest.xml

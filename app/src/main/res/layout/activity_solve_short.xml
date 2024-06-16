@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SolveActivityShort">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Original:"
+            />-->
+
+        <ImageView
+            android:id="@+id/imgViewAnhDaCrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blur:"
+            />
+
+        <ImageView
+            android:id="@+id/imgBlur"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gray:"
+            />
+
+        <ImageView
+            android:id="@+id/imgGray"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Threshold:"
+            />
+
+        <ImageView
+            android:id="@+id/imgThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dilate:"
+            />
+
+        <ImageView
+            android:id="@+id/imgDilate"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contour:"
+            />
+
+        <ImageView
+            android:id="@+id/imgContour"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bounding Rectangle:"
+            />
+
+        <ImageView
+            android:id="@+id/imgBounding"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Threshold (chữ đen nền trắng):"
+            />
+
+        <ImageView
+            android:id="@+id/imgThreshold_ChuDenNenTrang"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erode:"
+            />
+
+        <ImageView
+            android:id="@+id/imgErode"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segment Characters:"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCharacters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="5dp"
+            >
+
+        <EditText
+            android:id="@+id/edtBieuThuc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Nhập biểu thức"
+            android:inputType="text"
+            android:layout_weight="8"
+        />
+        <Button
+            android:id="@+id/btnGiaiSauKhiDaSua"
+            android:background="@drawable/custom_button_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="GIẢI"
+            android:layout_weight="2"
+            android:textColor="#fff"
+            />
+        </LinearLayout>
+        <!--android:digits="@string/accepted_values"-->
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiện MathView:"
+            />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIẢI"
+            android:layout_gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="24sp"
+            android:fontFamily="times new roman"
+            android:id="@+id/txtGiai"
+            />
+
+            <katex.hourglass.in.mathlib.MathView
+                app:setTextSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/mathView"
+                app:setClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        <TextView
+            android:id="@+id/txtDoThiHamSo"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Đồ thị hàm số: "
+            android:textColor="#FF1100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <com.softmoore.android.graphlib.GraphView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/graph_view"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

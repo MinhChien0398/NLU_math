@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="440dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginTop="10dp"
+                android:text="Điều chỉnh máy ảnh"
+                android:padding="13dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#262626"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <ImageView
+                android:layout_below="@id/title"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abc_vector_test"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"></ImageView>
+            <TextView
+                android:id="@+id/desc"
+                android:layout_below="@id/image"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="5dp"
+                android:maxLines="5"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:text="Bật máy ảnh và đưa vào vùng bài toán"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

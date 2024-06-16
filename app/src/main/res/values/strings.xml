@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NLUmath</string>
+    <string name="accepted_values">^/.0123456789()+-*:=;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>

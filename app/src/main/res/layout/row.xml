@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgViewHistory"
+            android:src="@drawable/hand_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageView>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textColor="#040400"
+            android:layout_toRightOf="@id/imgViewHistory"
+            android:layout_toEndOf="@id/imgViewHistory"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/txtDescription"
+            android:textSize="16sp"
+            android:textColor="#A3A39F"
+            android:text="Description"
+            android:layout_toRightOf="@id/imgViewHistory"
+            android:layout_toEndOf="@id/imgViewHistory"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="-10dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            ></CheckBox>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

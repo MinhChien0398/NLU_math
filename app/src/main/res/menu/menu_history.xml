@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ResultActivity">
+    <!-- actionViewClass: cho phép khi nhấn vào icon search sẽ hiện ra EditText -->
+    <item
+        android:id="@+id/mnuSearch"
+        android:icon="@drawable/ic_search"
+        android:title="Tìm kiếm"
+        android:orderInCategory="1"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:theme="@android:style/Theme.Holo.Light">
+
+    </item>
+<!--    <item-->
+<!--        android:id="@+id/mnuDelete"-->
+<!--        android:icon="@drawable/ic_delete"-->
+<!--        android:title="Xóa"-->
+<!--        app:showAsAction="always">-->
+
+<!--    </item>-->
+
+</menu>
